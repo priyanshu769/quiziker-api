@@ -1,0 +1,11 @@
+{
+  "name": "quiziker-api",
+  "version": "1.0.0",
+  "description": "API for quiz app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Priyanshu",
+  "license": "ISC"
+}
