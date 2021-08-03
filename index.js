@@ -17,8 +17,14 @@ const errorHandler500 = require("./middlewares/errorHandler500.middleware.js")
 
 // Routers
 const quizzes = require("./routers/quizzes.v1.router.js")
+const login = require("./routers/login.router.js")
+const signup = require("./routers/signup.router.js")
+const results = require("./routers/results.router.js")
 
 app.use("/quizzes", quizzes)
+app.use("/login", login)
+app.use("/signup", signup)
+app.use("/results", results)
 
 app.get('/', (req, res) => {
   res.send("Welcome to Quiziker's Rest API!")
